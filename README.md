@@ -6,6 +6,14 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 
 ## Making a plan
 
+1) Make HTML with 3 buttons and a score keeper
+2) Put image directly into HTML
+3) Import functions into app.js and grab DOM elements
+4) Initialize state for shell hiding places, correct guesses, and total guesses
+5) Set up event listeners for button clicks
+6) Create function to handle the guess that updates the view with the location of the ball plus the updated score keeper
+7) Create a ball in CSS file to be displayed at the correct location
+8) Finalize any other styling
 1) **Make a drawing of your app. Simple "wireframes"**
 1) **Once you have a drawing, name the HTML elements you'll need to realize your vision**
 1) **For each HTML element ask: Why do I need this? (i.e., "we need div to display the results in")** 
