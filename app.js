@@ -11,8 +11,29 @@ const winsEl = document.getElementById('wins');
 const lossesEl = document.getElementById('losses');
 const totalEl = document.getElementById('total');
 // let state
+let winCount = 0;
+let totalCount = 0;
 
+const choices = ['shell 1', 'shell 2', 'shell 3'];
 // set event listeners 
+
+shell1Button.addEventListener('click', () =>{
+  const Location = Math.floor(Math.random * 3);
+  const ballLocation = choices[Location];
+  handleGuess('Shell 1', ballLocation);
+});
+
+shell2Button.addEventListener('click', () =>{
+  const Location = Math.floor(Math.random * 3);
+  const ballLocation = choices[Location];
+  handleGuess('Shell 2', ballLocation);
+});
+
+shell3Button.addEventListener('click', () =>{
+  const Location = Math.floor(Math.random * 3);
+  const ballLocation = choices[Location];
+  handleGuess('Shell 3', ballLocation);
+});
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
