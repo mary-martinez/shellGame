@@ -20,46 +20,35 @@
     </header>
     <main>
         <section class="main-section">
-            <img class="main-logo" src="./assets/alchemy-logo.png" />
             <h2>
-                Welcome to Alchemy Bootstrap!
+                Find the <span id='giant'>giant</span> pearl!
+            </h2>
+            <h2>
+                Choose which shell you think has it:
             </h2>
 
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
+            <div id='shellOpts' class='shellsMain'>
+                <div id='shell1' class='shells'>
+                    <img src="https://www.pngkey.com/png/detail/264-2646223_pearl-oyster-shell-dish-with-sterling-japanese-from.png" class='shellImg' />
+                    <div id='ball1'></div>
+                    <button id='shell1-button'>Shell 1</button>
+                </div>
+                <div id='shell2' class='shells'>
+                    <img src="https://www.pngkey.com/png/detail/264-2646223_pearl-oyster-shell-dish-with-sterling-japanese-from.png" class='shellImg' />
+                    <div id='ball2'></div>
+                    <button id='shell2-button'>Shell 2</button>
+                </div>
+                <div id='shell3' class='shells'>
+                    <img src="https://www.pngkey.com/png/detail/264-2646223_pearl-oyster-shell-dish-with-sterling-japanese-from.png" class='shellImg' />
+                    <div id='ball3'></div>
+                    <button id='shell3-button'>Shell 3</button>
+                </div>
+            </div>
+            <div class='results'>
+                <div>Correct guesses: <span id='wins'>0</span></div>
+                <div>Incorrect guesses: <span id='losses'>0</span></div>
+                <div>Total plays: <span id='total'>0</span></div>
+            </div>
 
         </section>
     </main>

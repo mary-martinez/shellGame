@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Jost:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Jost:wght@300;400&family=Lobster+Two&family=Sacramento&display=swap');
 
 body {
     /* feel free to update these css variables for a quick theme */
@@ -37,10 +40,11 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    background-color: rgb(146, 221, 217);
 }
 
 section {
-    background-color: var(--color5);
+    background-color: rgb(146, 221, 217);
     max-width: 80%;
     display: flex;
     flex-direction: column;
@@ -50,7 +54,7 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    /* border: solid 2px var(--color1); */
 }
 
 header {
@@ -64,7 +68,13 @@ header {
 
 h2 {
     font-size: 1.8rem;
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-size: 50px;
+    font-family: 'Cookie', cursive;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255, 0.4);
 }
 
 .gutter-right {
@@ -89,3 +99,63 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+
+button {
+    width: 100px;
+    font-family: 'Jost', sans-serif;
+    font-size: larger;
+    justify-content: center;
+    background-color: #F6F6F6;
+    color: black;
+    border: #565656 2px solid;
+    box-shadow: 2px 2px 5px #565656;
+    border-radius: 5px;
+    font-weight: bold;
+    text-shadow: 3px 2px 1px rgba(255, 255, 255, 0.2);
+}
+.shellsMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.shells {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.shellImg {
+    height: 200px;
+    margin: 5px;
+    border-radius: 10px;
+    border: #565656 2px solid;
+}
+
+.ball {
+    background-image: radial-gradient(circle at 20px 20px, white, lightgray, whitesmoke, white);
+    height: 50px;
+    border-radius: 50%;
+    border: whitesmoke 2px solid;
+    width: 50px;
+    position: absolute;
+    margin: 10px;
+    box-shadow: 6px 6px 5px rgba(0,0,0,0.6);
+}
+
+.results {
+    margin: 25px;
+    padding: 10px;
+    background-color: #565656;
+    color: whitesmoke;
+    border-radius: 8px;
+    border: black 2px solid;
+    font-weight: bold;
+    font-family: 'Jost', sans-serif;
+    font-size: larger;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.4);
+}
+
+#giant {
+    text-decoration: underline;
+}
+
