@@ -65,6 +65,8 @@ header {
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
+    font-family: cursive;
+
 }
 
 .gutter-right {
@@ -90,4 +92,46 @@ footer {
     box-shadow: var(--shadow);
 }
 
+button {
+    width: 100px;
+    justify-content: center;
+    background-color: rgb(146, 221, 217);
+    color: #565656;
+    border: darkgray 2px solid;
+    box-shadow: #565656 2px 2px;
+}
+.shellsMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.shells {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 
+}
+.shellImg {
+    height: 200px;
+    margin: 5px;
+}
+
+.ball {
+    /* background-color: whitesmoke; */
+    background-image: linear-gradient(to bottom right, white, darkgray, whitesmoke, white);
+    height: 50px;
+    border-radius: 50%;
+    border: #565656 2px solid;
+    width: 50px;
+    position: absolute;
+    margin: 10px;
+    box-shadow: 2px 2px rgba(0,0,0,0.45);
+}
+
+.results {
+    margin: 25px;
+    padding: 10px;
+    background-color: #565656;
+    color: whitesmoke;
+}

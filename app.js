@@ -3,9 +3,9 @@ const shell1Button = document.getElementById('shell1-button');
 const shell2Button = document.getElementById('shell2-button');
 const shell3Button = document.getElementById('shell3-button');
 
-const shell1Container = document.getElementById('shell1');
-const shell2Container = document.getElementById('shell2');
-const shell3Container = document.getElementById('shell3');
+const ball1Container = document.getElementById('ball1');
+const ball2Container = document.getElementById('ball2');
+const ball3Container = document.getElementById('ball3');
 
 const winsEl = document.getElementById('wins');
 const lossesEl = document.getElementById('losses');
@@ -42,9 +42,9 @@ shell3Button.addEventListener('click', () =>{
 
 function handleGuess(userGuess, answer) {
     // reset classList
-    shell1Container.classList.remove('ball');
-    shell2Container.classList.remove('ball');
-    shell3Container.classList.remove('ball');
+    ball1Container.classList.remove('ball');
+    ball2Container.classList.remove('ball');
+    ball3Container.classList.remove('ball');
     // update total count
     totalCount++;
     // check if userGuess === answer & update winCount if needed
@@ -53,11 +53,11 @@ function handleGuess(userGuess, answer) {
     }
     // if, else if, else statements to show the actual location of the ball
     if (answer === 'shell1'){
-        shell1Container.classList.add('ball');
+        ball1Container.classList.add('ball');
     } else if (answer === 'shell2') {
-        shell2Container.classList.add('ball');
+        ball2Container.classList.add('ball');
     } else {
-        shell3Container.classList.add('ball');
+        ball3Container.classList.add('ball');
     }
 
     //update counters in DOM to reflect new state
