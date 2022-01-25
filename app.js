@@ -40,11 +40,22 @@ shell3Button.addEventListener('click', () =>{
   // get user input
   // use user input to update state 
 
-function handleGuess(userGuess, answer) {
+
+function reset(){
     // reset classList
     ball1Container.classList.remove('ball');
     ball2Container.classList.remove('ball');
     ball3Container.classList.remove('ball');
+}
+function displayResults(){
+    //update counters in DOM to reflect new state
+    totalEl.textContent = totalCount;
+    winsEl.textContent = winCount;
+    lossesEl.textContent = totalCount - winCount;
+}
+
+function handleGuess(userGuess, answer) {
+    reset();
     // update total count
     totalCount++;
     // check if userGuess === answer & update winCount if needed
@@ -59,10 +70,7 @@ function handleGuess(userGuess, answer) {
     } else {
         ball3Container.classList.add('ball');
     }
+    displayResults();
 
-    //update counters in DOM to reflect new state
-    totalEl.textContent = totalCount;
-    winsEl.textContent = winCount;
-    lossesEl.textContent = totalCount - winCount;
 }
   // update DOM to reflect the new state
